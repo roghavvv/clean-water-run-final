@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffc907" />
+  <meta name="description" content="Catch clean water, dodge pollution, and learn why every drop matters. A student-made game inspired by charity: water." />
+  <title>Clean Water Run | Final Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div><p class="eyebrow">A STUDENT-MADE GAME INSPIRED BY CHARITY: WATER</p><h1>Clean Water Run <span aria-hidden="true">💧</span></h1><p class="subtitle">Catch clean water. Dodge pollution. Make every drop count.</p></div>
+      <div class="header-actions"><button id="soundBtn" class="button button-outline" type="button" aria-pressed="true">🔊 Sound On</button><button id="resetBtn" class="button button-outline" type="button">↻ Reset</button></div>
+    </header>
+
+    <section class="game-panel" aria-label="Clean Water Run game">
+      <div class="mode-bar"><span class="mode-label">DIFFICULTY</span><div class="mode-buttons" role="group" aria-label="Choose difficulty"><button type="button" class="mode-button" data-mode="easy">Easy</button><button type="button" class="mode-button active" data-mode="normal" aria-pressed="true">Normal</button><button type="button" class="mode-button" data-mode="hard">Hard</button></div><span id="modeDetails" class="mode-details">30s · 200-point goal · 3 lives</span></div>
+      <div class="stats"><div class="stat"><span>SCORE</span><strong id="score">0</strong></div><div class="stat"><span>TIME LEFT</span><strong id="time">30s</strong></div><div class="stat"><span>LIVES</span><strong id="lives" aria-label="3 lives">❤️ ❤️ ❤️</strong></div></div>
+      <div class="progress-label"><strong>Water collected</strong><span id="progressText">0 / 200 points</span></div><div class="progress-track" role="progressbar" aria-label="Progress toward clean water goal" aria-valuemin="0" aria-valuemax="200" aria-valuenow="0" id="progressTrack"><div id="progressFill" class="progress-fill"></div></div>
+      <p id="milestone" class="milestone" aria-live="polite">Collect blue drops (+10). Avoid brown drops (−10 and −1 life).</p>
+      <div id="gameArea" class="game-area" aria-label="Game field. Move with arrow keys or drag your finger." tabindex="0"><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="horizon"></div><div id="drops" class="drops"></div><div id="player" class="player" aria-label="Yellow water jerry can"><span class="can-handle"></span><span class="can-drop">💧</span></div><div id="effects" class="effects" aria-hidden="true"></div>
+        <div id="overlay" class="overlay"><div class="modal"><div class="modal-icon" id="modalIcon">💧</div><h2 id="modalTitle">Ready to make every drop count?</h2><p id="modalText">Move your yellow jerry can to catch clean water and avoid pollution. Choose a difficulty, then start playing!</p><button id="startBtn" type="button" class="button button-primary">Start Game →</button><p class="controls-hint">Desktop: ← → keys or mouse · Mobile: drag your finger</p></div></div>
+      </div>
+      <div class="game-bottom"><span>← → Arrow keys, mouse, or touch to move</span><span id="goalHint">Goal: 200 points</span></div>
+    </section>
+    <section class="impact"><div class="impact-icon">💛</div><div><h2>Clean water changes lives.</h2><p>Millions of people still lack access to safe drinking water. This student-created game is inspired by <strong>charity: water</strong> and its mission to help bring clean and safe water to people around the world.</p></div></section>
+    <footer class="footer"><div><strong>Every drop matters.</strong><p>Want to make a real-world impact? Learn about the mission or support clean water projects.</p></div><nav aria-label="charity: water links"><a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">Visit charity: water ↗</a><a class="donate-link" href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">Donate to clean water ↗</a></nav></footer>
+    <p class="disclaimer">Independent student project. Not an official charity: water game or endorsement.</p>
+  </main>
+</body>
+</html>
