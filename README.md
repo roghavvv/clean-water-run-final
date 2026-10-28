@@ -20,22 +20,5 @@ A student-made browser game inspired by charity: water's mission. Catch clean wa
 - Milestone messages at 25%, 50%, 75%, and 100% of each difficulty's score target, implemented with an array and conditionals.
 - Confetti animation for a win, responsive layout, keyboard/mouse/touch controls, Reset, and Play Again.
 
-## Publish on GitHub Pages
-
-**Do not edit or overwrite the original Project 5 repository.** Create a new public repository named `clean-water-run-final`. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository root. Under Settings → Pages, choose Deploy from a branch, `main`, `/(root)`, then Save. Wait for the published URL and test it in an incognito/private window.
-
-Expected URL after publishing: `https://roghavvv.github.io/clean-water-run-final/` (not live until you publish).
-
-## Testing checklist
-
-- Easy, Normal, Hard update timer/goal/lives and falling speed.
-- Blue drops increase score; brown drops decrease score and lives.
-- Drops disappear on collision; score feedback appears.
-- Reset and Play Again restart the chosen mode.
-- Milestones appear as the score increases.
-- Sounds work after Start is clicked; mute button works.
-- Win triggers confetti and message; timeout/lives trigger loss.
-- Phone layout fits and touch drag moves the can.
-- Both charity: water links open correctly.
 
 This is an independent student project, not an official charity: water game.
